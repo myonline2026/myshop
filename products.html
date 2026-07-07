@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+
+<html lang="fa" dir="rtl">
+
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>
+مدیریت محصولات
+</title>
+
+
+<link rel="stylesheet" href="../style.css">
+
+
+</head>
+
+
+
+<body>
+
+
+<div class="main">
+
+
+
+<h1>
+📦 مدیریت محصولات
+</h1>
+
+
+
+
+
+
+<section class="box">
+
+
+<h2>
+افزودن جنس جدید
+</h2>
+
+
+
+
+<input id="productCode" placeholder="کد محصول">
+
+
+<input id="name" placeholder="نام جنس">
+
+
+
+<select id="category">
+
+
+<option>
+مواد غذایی
+</option>
+
+
+<option>
+نوشیدنی
+</option>
+
+
+<option>
+لوازم آرایشی
+</option>
+
+
+<option>
+لوازم بهداشتی
+</option>
+
+
+<option>
+لوازم آشپزخانه
+</option>
+
+
+<option>
+لوازم دهقانی
+</option>
+
+
+<option>
+پوشاک
+</option>
+
+
+<option>
+برقی
+</option>
+
+
+</select>
+
+
+
+
+<input id="purchasePrice" placeholder="قیمت خرید">
+
+
+<input id="marketPrice" placeholder="قیمت بازار">
+
+
+<input id="storePrice" placeholder="قیمت خیرخواه">
+
+
+<input id="stock" placeholder="تعداد موجودی">
+
+
+
+
+
+<input 
+type="file"
+id="image"
+accept="image/*"
+multiple
+>
+
+
+
+
+
+<button onclick="addProduct()">
+
+ثبت محصول
+
+</button>
+
+
+
+</section>
+
+
+
+
+
+
+
+<section class="box">
+
+
+<h2>
+لیست محصولات
+</h2>
+
+
+
+<table>
+
+
+<thead>
+
+
+<tr>
+
+<th>
+کد
+</th>
+
+<th>
+نام
+</th>
+
+
+<th>
+دسته
+</th>
+
+
+<th>
+قیمت بازار
+</th>
+
+
+<th>
+قیمت خیرخواه
+</th>
+
+
+<th>
+موجودی
+</th>
+
+
+</tr>
+
+
+
+</thead>
+
+
+
+<tbody id="products">
+
+</tbody>
+
+
+</table>
+
+
+
+</section>
+
+
+
+
+
+</div>
+
+
+
+
+<script src="products.js"></script>
+
+
+</body>
+
+
+</html>

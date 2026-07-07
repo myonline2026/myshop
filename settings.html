@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>
+تنظیمات فروشگاه
+</title>
+
+<link rel="stylesheet" href="../style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="main">
+
+
+<h1>
+⚙️ تنظیمات فروشگاه
+</h1>
+
+
+
+<section class="box">
+
+
+<h2>
+اطلاعات عمومی
+</h2>
+
+
+<input id="storeName" placeholder="نام فروشگاه">
+
+
+<input id="storePhone" placeholder="شماره تماس فروشگاه">
+
+
+<input id="storeAddress" placeholder="آدرس فروشگاه">
+
+
+<button onclick="saveSettings()">
+
+ذخیره تنظیمات
+
+</button>
+
+
+</section>
+
+
+
+
+
+
+
+<section class="box">
+
+
+<h2>
+تنظیمات سیستم
+</h2>
+
+
+
+<label>
+
+واحد پول:
+
+</label>
+
+
+<select id="currency">
+
+
+<option>
+AFN
+</option>
+
+
+<option>
+USD
+</option>
+
+
+</select>
+
+
+
+
+<br><br>
+
+
+
+<label>
+
+فعال بودن فروش آنلاین:
+
+</label>
+
+
+
+<select id="online">
+
+
+<option value="true">
+فعال
+</option>
+
+
+<option value="false">
+غیرفعال
+</option>
+
+
+</select>
+
+
+
+</section>
+
+
+
+
+
+
+<section class="box">
+
+
+<h2>
+مدیریت دسته‌بندی‌ها
+</h2>
+
+
+
+<input id="newCategory" placeholder="نام دسته جدید">
+
+
+<button onclick="addCategory()">
+
+افزودن دسته
+
+</button>
+
+
+
+<ul id="categories">
+
+</ul>
+
+
+</section>
+
+
+
+
+</div>
+
+
+
+<script src="settings.js"></script>
+
+
+</body>
+
+</html>
